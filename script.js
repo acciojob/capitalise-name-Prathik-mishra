@@ -1,3 +1,5 @@
 //your JS code here. If required.
-let name=document.getElementById("fname");
-name.uppercase();
+let infield=document.getElementById('fname');
+infield.addEventListener('blur',function(){
+     infield.value = infield.value.toUpperCase();
+});
